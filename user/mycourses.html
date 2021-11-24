@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Courses</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow">
+        <div class="container"><a class="navbar-brand" ng-reflect-router-link="/" href="/"><img
+                    src="assets/images/logo.png" class="d-inline-block mb-1" style="height: 40px;">&nbsp;&nbsp; <span
+                    class="d-inline-block">edTech</span></a><button type="button" data-toggle="collapse"
+                data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                        href="/user/dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                        href="/user/myorders.html">My Orders</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                    href="/user/mycourses.html">My Courses</a>
+                </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><span class="nav-link text-dark">Welcome : User</span></li>
+                    <li class="nav-item"><a href="/login.html" class="nav-link text-dark">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pb-4 pt-4">
+        <h2>Subscribed Courses</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4 pb-4">
+                <div class="card box-shadow">
+                    <a title="Get More Details" href="#"><img alt=" image"
+                            class="card-img-top" style="width: 100%; height: 169px;" src="assets/images/csharp.png">
+                        </a>
+                    <div class="card-body">
+                        <h4 class="card-title">C# For Beginners</h4>
+                        <p class="card-text">Learn C# from scratch by doing hands-on labs and building
+                            projects. </p>
+                        <p><span class="pt-1 d-inline-block"> Level: Beginner</span><span class="float-right font-20">
+                            <a class="btn btn-outline-primary" href="#">Acess
+                                    Now</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card box-shadow"><a title="Get More Details" href="/"><img alt=" image" class="card-img-top"
+                            style="width: 100%; height: 169px;" src="assets/images/angular.png"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Angular For Beginners</h4>
+                        <p class="card-text">Learn Angular from scratch by doing hands-on labs and building projects.
+                        </p>
+                        <p><span class="pt-1 d-inline-block"> Level: Beginner</span><span class="float-right font-20"><a
+                                    href="javascript:void(0)" class="btn btn-outline-primary">Access Now</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card box-shadow"><a title="Get More Details" href="/"><img alt=" image" class="card-img-top"
+                            style="width: 100%; height: 169px;" src="assets/images/react.png"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">React For Beginners</h4>
+                        <p class="card-text">Learn React from scratch by doing hands-on labs and building projects.</p>
+                        <p><span class="pt-1 d-inline-block"> Level: Beginner</span><span class="float-right font-20"><a
+                                    href="javascript:void(0)" class="btn btn-outline-primary">Access Now</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </app-courses>
+        <!--container-->
+    </div>
+</body>
+
+</html>

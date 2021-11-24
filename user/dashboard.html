@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>User Dashboard</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow">
+        <div class="container"><a class="navbar-brand" ng-reflect-router-link="/" href="/"><img
+                    src="assets/images/logo.png" class="d-inline-block mb-1" style="height: 40px;" />&nbsp;&nbsp; <span
+                    class="d-inline-block">edTech</span></a><button type="button" data-toggle="collapse"
+                data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                            href="/user/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                            href="/user/myorders.html">My Orders</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                            href="/user/mycourses.html">My Courses</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><span class="nav-link text-dark">Welcome : User</span></li>
+                    <li class="nav-item"><a href="/login.html" class="nav-link text-dark">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pb-4 pt-4">
+        <h1 class="mb-4">Dashboard</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="text-decoration-none text-dark" href="/user/mycourses.html">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header text-center text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-camera-video">
+                                <path fill-rule="evenodd"
+                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My Courses</h5>
+                            <p class="card-text">A curated list of courses at platform</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="text-decoration-none text-dark" href="/user/myorders.html">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header text-center text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-basket3">
+                                <path
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My Orders</h5>
+                            <p class="card-text">A curated list of topics at platform</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--container-->
+    </div>
+    <!--container-->
+</body>
+
+</html>

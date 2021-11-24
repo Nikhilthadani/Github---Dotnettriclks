@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Orders</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow">
+        <div class="container"><a class="navbar-brand" ng-reflect-router-link="/" href="/"><img
+                    src="assets/images/logo.png" class="d-inline-block mb-1" style="height: 40px;">&nbsp;&nbsp; <span
+                    class="d-inline-block">edTech</span></a><button type="button" data-toggle="collapse"
+                data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                        href="/user/dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                        href="/user/myorders.html">My Orders</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" ng-reflect-router-link="/user"
+                    href="/user/mycourses.html">My Courses</a>
+                </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><span class="nav-link text-dark">Welcome : User</span></li>
+                    <li class="nav-item"><a href="/login.html" class="nav-link text-dark">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </app-header>
+    <div class="container pb-4 pt-4">
+        <router-outlet></router-outlet>
+        <app-orders>
+            <h2>My Orders</h2>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Payment Id</th>
+                        <th>Created Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>order_HaGctpDFlTFtOE</td>
+                        <td>pay_HaGdqFusDhsuLV</td>
+                        <td>2021-07-18T10:18:46.4512319</td>
+                        <td><a class="btn btn-success" ng-reflect-router-link="/user/order,order_HaGctpDFlTFt"
+                                href="/user/order/order_HaGctpDFlTFtOE">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>order_HZu0MeTzOvyVZO</td>
+                        <td>pay_HZu0tps8UNQIH5</td>
+                        <td>2021-07-17T12:10:51.6740648</td>
+                        <td><a class="btn btn-success" ng-reflect-router-link="/user/order,order_HZu0MeTzOvyV"
+                                href="/user/order/order_HZu0MeTzOvyVZO">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>order_HZu3mf15zsvfBL</td>
+                        <td>pay_HZu44rFrrnPN5y</td>
+                        <td>2021-07-17T12:13:43.2762996</td>
+                        <td><a class="btn btn-success" ng-reflect-router-link="/user/order,order_HZu3mf15zsvf"
+                                href="/user/order/order_HZu3mf15zsvfBL">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>order_HZu8smBgVl8ORl</td>
+                        <td>pay_HZu9Arov4XCOR1</td>
+                        <td>2021-07-17T12:18:29.7588654</td>
+                        <td><a class="btn btn-success" ng-reflect-router-link="/user/order,order_HZu8smBgVl8O"
+                                href="/user/order/order_HZu8smBgVl8ORl">Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--container-->
+    </div>
+</body>
+
+</html>
